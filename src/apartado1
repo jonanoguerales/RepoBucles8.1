@@ -1,0 +1,20 @@
+import {Pacientes} from "./modelo";
+
+
+//Apartado 1
+
+//a) Queremos extraer la lista de paciente que están asignados a la especialidad de Pediatría
+
+const obtenPacientesAsignadosAPediatria = (
+    pacientes: Pacientes[]
+  ) : Pacientes[] => {
+    const obtenerListaPacientesPediatria=[];
+    for(let i=0; i<pacientes.length;i++){
+        if(pacientes[i].especialidad === "Pediatra"){
+            console.log(pacientes[i])
+            }
+        }
+     return obtenerListaPacientesPediatria;  
+    };
+
+console.log("hola")
